@@ -9,5 +9,14 @@
         android:id="@+id/quizFragment"
         android:name="com.example.quizit.ui.QuizFragment"
         android:label="QuizFragment"
-        tools:layout="@layout/fragment_quiz"/>
+        tools:layout="@layout/fragment_quiz">
+        <action
+            android:id="@+id/action_quizFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.quizit.ui.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result"/>
 </navigation>
